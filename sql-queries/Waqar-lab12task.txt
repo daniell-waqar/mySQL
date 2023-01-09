@@ -1,0 +1,282 @@
+1:
+
+test> use 20P-0750
+switched to db 20P-0750
+20P-0750> show dbs;
+20P-0750    7.51 MiB
+admin      40.00 KiB
+config    108.00 KiB
+lab12      80.00 KiB
+local      72.00 KiB
+
+
+----------------------------------------------------------------------------------------
+
+
+2: I created collection from mongodb compass.
+
+3: then Import both json files from mongodb compass.
+
+20P-0750> show tables;
+cities
+movies
+
+------------------------------------------------------------------------------------------
+
+4:
+	i:
+		20P-0750> db.cities.find({ timezone:"Africa/Harare"})
+[
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8c6"),
+    name: 'Zvishavane',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 35896,
+    location: { latitude: -20.32674, longitude: 30.06648 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8c7"),
+    name: 'Victoria Falls',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 35761,
+    location: { latitude: -17.92353, longitude: 25.84299 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8c8"),
+    name: 'Shurugwi',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 17075,
+    location: { latitude: -19.67016, longitude: 30.00589 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8c9"),
+    name: 'Shangani',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 3835,
+    location: { latitude: -19.78333, longitude: 29.36667 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8ca"),
+    name: 'Shamva',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 10317,
+    location: { latitude: -17.31159, longitude: 31.57561 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8cb"),
+    name: 'Rusape',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 29292,
+    location: { latitude: -18.52785, longitude: 32.12843 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8cc"),
+    name: 'Redcliff',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 33197,
+    location: { latitude: -19.03333, longitude: 29.78333 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8cd"),
+    name: 'Raffingora',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 1957,
+    location: { latitude: -17.03333, longitude: 30.43333 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8ce"),
+    name: 'Plumtree',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 2148,
+    location: { latitude: -20.48333, longitude: 27.81667 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8cf"),
+    name: 'Penhalonga',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 7681,
+    location: { latitude: -18.89112, longitude: 32.69781 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8d0"),
+    name: 'Odzi',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 3438,
+    location: { latitude: -18.96167, longitude: 32.40557 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8d1"),
+    name: 'Nyazura',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 2110,
+    location: { latitude: -18.70587, longitude: 32.16796 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8d2"),
+    name: 'Nyanga',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 4852,
+    location: { latitude: -18.21667, longitude: 32.75 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8d3"),
+    name: 'Norton',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 52054,
+    location: { latitude: -17.88333, longitude: 30.7 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8d4"),
+    name: 'Mvurwi',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 7970,
+    location: { latitude: -17.03333, longitude: 30.85 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8d5"),
+    name: 'Mvuma',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 4331,
+    location: { latitude: -19.27924, longitude: 30.52828 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8d6"),
+    name: 'Mutoko',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 9532,
+    location: { latitude: -17.39699, longitude: 32.22677 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8d7"),
+    name: 'Mutare',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 184205,
+    location: { latitude: -18.9707, longitude: 32.67086 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8d8"),
+    name: 'Murehwa',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 8559,
+    location: { latitude: -17.64322, longitude: 31.784 }
+  },
+  {
+    _id: ObjectId("637a04fd55a883b0d21eb8d9"),
+    name: 'Mount Darwin',
+    country: 'ZW',
+    timezone: 'Africa/Harare',
+    population: 6349,
+    location: { latitude: -16.77251, longitude: 31.58381 }
+  }
+]
+
+-----------------------------------------------------------------------------------------------
+
+	ii:
+		20P-0750> db.cities.find({ population: {$gt: 12985000 }})
+[
+  {
+    _id: ObjectId("637a04f655a883b0d21d35eb"),
+    name: 'Buenos Aires',
+    country: 'AR',
+    timezone: 'America/Argentina/Buenos_Aires',
+    population: 13076300,
+    location: { latitude: -34.61315, longitude: -58.37723 }
+  },
+  {
+    _id: ObjectId("637a04f755a883b0d21d59dc"),
+    name: 'Shanghai',
+    country: 'CN',
+    timezone: 'Asia/Shanghai',
+    population: 14608512,
+    location: { longitude: 31.22222, latitude: 121.45806 }
+  }
+]
+------------------------------------------------------------------------------------------------------
+
+	iii:
+		20P-0750> db.cities.find({"location.longitude": {$eq:-58.37723}},{ location: 1, population: 1, _id: 0 })
+[
+  {
+    population: 13076300,
+    location: { latitude: -34.61315, longitude: -58.37723 }
+  }
+]
+-------------------------------------------------------------------------------------------------------------
+		
+
+5:
+
+20P-0750> db.cities.updateOne( { country: "PK", "location.latitude": {$eq:73.2122}},
+... { 
+... $set: { population: 55000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+-----------To confirm-----------------------------------------------------------------------
+
+20P-0750> db.cities.find({"location.latitude": {$eq:73.2122}})
+[
+  {
+    _id: ObjectId("637a04fb55a883b0d21e3c52"),
+    name: 'Malakwal City',
+    country: 'PK',
+    timezone: 'Asia/Karachi',
+    population: 55000,
+    location: { longitude: 32.55492, latitude: 73.2122 }
+  }
+]
+
+-------------------------------------------------------------------------------------------------
+
+
+6:
+
+20P-0750> db.cities.deleteMany({ timezone: "Asia/Karachi",
+... country: "PK"})
+{ acknowledged: true, deletedCount: 424 }
+
+
+--------------------------------------------------------------------------------------------------
+
+7:
+
+20P-0750> db.movies.find({"info.birthname":
+... "Freeman, Crispin McDougal"},{"info.birthname": 1})
+[
+  {
+    _id: ObjectId("637a054355a883b0d21ebce8"),
+    info: { birthname: [ 'Freeman, Crispin McDougal' ] }
+  }
+]
+
+
+
+
+
+
+
